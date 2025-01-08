@@ -15,3 +15,20 @@ def binary_search(arr, target):
       else:
          newLength = newLength//2
          print("larger than mid")
+
+
+#-------------------------------------------
+
+input = "racecar"
+def isPalindrome(input):
+  input = input.lower()
+  i = 0
+  j = len(input)
+  while i < j:
+      if input[i] != input[j-1]:
+        return False
+      i += 1
+      j -= 1
+  return True
+
+print(isPalindrome(input))
